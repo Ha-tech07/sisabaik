@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="id">
-    <link rel="stylesheet" href="style.css">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +8,80 @@
     name="description"
     content="sisabaik membantu penyedia menawarkan makanan berlebih agar tetap berniali,terjangkau, dan tidak terbuang sia-sia."
 >
-    <title>Beranda | sisabaik</title>
+   <title>Beranda | sisabaik</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <a href="#konten-utama">Lewati ke konten utama</a>
 
-<header>
-    <p><strong>sisabaik</strong></p>
-    <nav aria-label="Navigasi utama">
-        <ul>
+<body>
+<a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+
+<header class="site-header">
+    <div class="container header-layout">
+        <p class="brand">sisaBaik</p>
+            <nav aria-label="Navigasi utama">
+    <ul class="nav-list">
             <li><a href="index.html" aria-current="page">Beranda</a></li>
             <li><a href="#cara-kerja">Cara kerja</a></li>
             <li><a href="daftar-penyedia.html">Daftar sebagai penyedia</a></li>
             <li><a href="tawarkan-makanan.html">Tawarkan makanan</a></li>
-        </ul>
+    </ul>
     </nav>
+    </div>
 </header>
 
 <main id="konten-utama" tabindex="-1">
-    <section aria-labelledby="judul-utama">
+    <section class="hero" aria-labelledby="judul-utama">
         <img src="gambar/met-makan-smua.jpg" alt="Logo sisabaik yang menjadi identitas visual platform berbagi makanan berlebih" width="400" height="400">
-        <h1 id="judul-utama">Pulihkan nilai makanan berlebih bersama sisabaik</h1>
-        <p>
-        sisabaik mempertemukan penyedia yang memiliki stok makanan layak
-        konsumsi dengan pembeli atau penerima yang membutuhkan.
-        </p>
-        <p>
-            <a href="daftar-penyedia.html">Daftar sebagai penyedia</a>
-            atau
-            <a href="#penawaran-contoh">lihat contoh penawaran</a>.
-        </p>
-    </section>
-
-    <section id="cara-kerja" aria-labelledby="judul-cara-kerja">
-        <h2 id="judul-cara-kerja">Cara kerja</h2>
-        <ol>
-            <li>Peneydia mendaftarkan identitas dan informasi usahanya.</li>
-            <li>Penyedia mencatat makanan berlebih yang masih layak konsumsi.</li>
-            <li>Pembeli atau penerima memilih penawaran yang sesuai.</li>
-            <li>Makanan diambil sesuai waktu dan ketentuan yang dispekatai</li>
-        </ol>
+        <div class="container hero-layout">
+            <div>
+            <p class="eyebrow">selamatkan makanan, pulinkan hilainya</p>
+            <h1 id="judul-utama">Makanan berlebih masih dapat memberi manfaat</h1>
+            <p class="lead">SisaBaik mempertemukan penyedia yang memiliki stok makanan layak konsumsi dengan pembeli
+                atau penerima yang membutuhkannya .</p>
+        <div class="button-group">
+        <a class="button" href="daftar-penyedia.html">Mulai sebagai penyedia</a>
+        <a class="button button-secondary" href="#penawaran-contoh">Lihat contoh penawaran</a>
+       </div>
+        </div>
+            <aside class="hero-panel" aria-label="Ringkasan manfaat SisaBaik">
+            <strong>3 pihak</strong>
+            <p>Penyedia, pengguna, dan lingkungan memperoleh manfaat dari makanan yang tidak terbuang .</p>
+            </aside>
+            </div>
         </section>
 
-      <section aria-labelledby="judul-manfaat">
+   <section class="section" id="cara-kerja" aria-labelledby="judul-cara-kerja">
+        <div class="container">
+            <h2 id="judul-cara-kerja">Cara kerja</h2>
+                <p class="section-intro">Alur sederhana ini akan dikembangkan menjadi proses aplikasi penuh pada chapter berikutnya .
+
+                </p>
+        <div class="steps-grid">
+        <article class="card">
+        <span class="step-number" aria-hidden="true">1</span>
+        <h3>Daftarkan usaha</h3>
+        <p>Penyedia mencatat identitas dan informasi dasar usahanya .</p>
+        </article>
+        <article class="card">
+        <span class="step-number" aria-hidden="true">2</span>
+        <h3>Catat makanan</h3>
+        <p>Penyedia menjelaskan makanan berlebih yang masih layak konsumsi .</p>
+        </article>
+        <article class="card">
+        <span class="step-number" aria-hidden="true">3</span>
+        <h3>Atur pengambilan</h3>
+        <p>Pengguna memilih penawaran dan mengambilnya sesuai ketentuan .</p>
+        </article>
+        </div>
+        </div>
+        </section>
+
+      <section class="section section-alt" aria-labelledby="judul-manfaat">
+        <div class="container">
     <h2 id="judul-manfaat">Manfaat sisabaik</h2>
+        <div class="benefit-grid">
+        <article class="card">
+        <h3>Untuk penyedia</h3>
 
         <article>
             <h3><img src="gambar/tray.png" alt="Icon penyedia" width="40" height="40">Untuk penyedia</h3>
@@ -61,7 +91,7 @@
             </p>
         </article>
 
-        <article>
+        <article class="card">
             <h3><img src="gambar/take-away.png" alt="Icon pembeli" width="40" height="40">Untuk pembeli atau penerima</h3>
             <p>
             Membuka akses terhadap makanan layak konsumsi dengan harga lebih
